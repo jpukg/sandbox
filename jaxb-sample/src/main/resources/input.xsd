@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- Generated using Flame-Ware Solutions XML-2-XSD v2.0 at http://www.flame-ware.com/Products/XML-2-XSD/ -->
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="addendum" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="name1" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="name2" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="name3" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="name4" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="name5" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+              <xs:element name="name6" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+              <xs:element name="name7" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+              <xs:element name="name8" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" />
+            <xs:attribute name="key" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="request" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
