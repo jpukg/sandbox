@@ -1,4 +1,4 @@
-package example.test;
+package org.example.main.test;
 
 import java.io.ByteArrayInputStream;
 import java.io.StringWriter;
@@ -15,7 +15,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-public class XMLImport {
+public class TestCombineTwoDocumentObject {
 
 	public static void main(String[] args) throws Exception {
 		DocumentBuilderFactory dbFactory = javax.xml.parsers.DocumentBuilderFactory.newInstance();

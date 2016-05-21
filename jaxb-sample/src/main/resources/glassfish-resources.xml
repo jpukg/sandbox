@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
 <resources>
-	<jdbc-resource jndi-name="jdbc/agcc" pool-name="HSQLPool" />
+	<jdbc-resource jndi-name="jdbc/sample" pool-name="HSQLPool" />
 	<jdbc-connection-pool datasource-classname="org.hsqldb.jdbc.JDBCDataSource"
 		driver-classname="" name="HSQLPool" ping="true" res-type="javax.sql.DataSource">
 		<property name="DatabaseName" value="jdbc:hsqldb:hsql://localhost/sampledb" />

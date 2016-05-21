@@ -1,4 +1,4 @@
-package example.test;
+package org.example.main.test;
 
 import java.io.StringWriter;
 
@@ -11,15 +11,14 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.example.jaxb.Request;
+import org.example.jaxb.Request.Addendum;
 import org.w3c.dom.Document;
 
-import sample.jaxb.Request;
-import sample.jaxb.Request.Addendum;
+public class TestJaxbObjectToXML1 {
 
-public class Test {
-
-	@SuppressWarnings("restriction")
 	public static void main(String[] args) throws Exception {
+		
 		// Create the JAXBContext
 		JAXBContext jc = JAXBContext.newInstance(Request.class);
 

@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.example</groupId>
-	<artifactId>org.example.jaxb</artifactId>
+	<artifactId>jaxb-example</artifactId>
 	<name>jaxb-example</name>
 	<packaging>jar</packaging>
 	<version>0.0.1</version>
@@ -22,20 +22,16 @@
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.jasypt</groupId>
 			<artifactId>jasypt</artifactId>
 			<version>1.9.2</version>
 		</dependency>
-
 		<dependency>
 			<groupId>commons-configuration</groupId>
 			<artifactId>commons-configuration</artifactId>
 			<version>1.10</version>
 		</dependency>
-
-
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -142,7 +138,6 @@
 			<scope>test</scope>
 		</dependency>
 
-
 		<!-- EJB 3 -->
 		<dependency>
 			<groupId>javax.ejb</groupId>
@@ -171,7 +166,7 @@
 							<schemaIncludes>
 								<include>input.xsd</include>
 							</schemaIncludes>
-							<generatePackage>sample.jaxb</generatePackage>
+							<generatePackage>org.example.jaxb</generatePackage>
 							<generateDirectory>src/main/java</generateDirectory>
 						</configuration>
 					</execution>
