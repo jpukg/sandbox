@@ -17,3 +17,11 @@ https://github.com/OneBusAway/onebusaway-application-modules/wiki/Database-Guide
 
 JTA tranaction
 http://www.datanucleus.org/products/datanucleus/jpa/transactions.html#jta
+
+https://github.com/onurakpolat/awesome-bigdata
+
+http://docs.oracle.com/cd/A97688_16/generic.903/bp/java.htm#1005707
+
+https://github.com/samolisov/spring-4x-demos
+
+

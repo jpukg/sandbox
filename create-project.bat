@@ -1,0 +1,1 @@
+ mvn archetype:generate -B -DarchetypeGroupId=pl.codeleak -DarchetypeArtifactId=spring-mvc-quickstart -DarchetypeVersion=1.0.0         -DgroupId=my.groupid -DartifactId=my-artifactId -Dversion=version -DarchetypeRepository=http://kolorobot.github.io/spring-mvc-quickstart-archetype
