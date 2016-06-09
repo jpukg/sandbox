@@ -22,6 +22,14 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.management.j2ee</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.jasypt</groupId>
 			<artifactId>jasypt</artifactId>
@@ -172,7 +180,63 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<artifactId>maven-ejb-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<ejbVersion>3.1</ejbVersion>
+				</configuration>
+			</plugin>
 
 		</plugins>
 	</build>
+	<profiles>
+		<profile>
+			<id>eclipse</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<artifactId>maven-eclipse-plugin</artifactId>
+							<version>2.9</version>
+							<configuration>
+								<wtpversion>2.0</wtpversion>
+								<downloadSources>false</downloadSources>
+								<downloadJavadocs>false</downloadJavadocs>
+								<ajdtVersion>none</ajdtVersion>
+								<useProjectReferences>true</useProjectReferences>
+								<additionalProjectnatures>
+									<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+								</additionalProjectnatures>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
+			</properties>
+		</profile>
+		<profile>
+			<id>m2e</id>
+			<!-- This profile is only activated when building in Eclipse with m2e -->
+			<activation>
+				<property>
+					<name>m2e.version</name>
+				</property>
+			</activation>
+			<properties>
+				<packagingExcludes></packagingExcludes>
+			</properties>
+		</profile>
+	</profiles>
 </project>
