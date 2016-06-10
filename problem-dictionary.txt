@@ -1,0 +1,2 @@
+Glassfish derby issue
+http://stackoverflow.com/questions/6061722/how-do-i-set-the-security-policy-file-for-a-specific-application-from-within-net
