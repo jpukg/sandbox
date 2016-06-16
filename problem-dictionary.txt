@@ -1,2 +1,12 @@
 Glassfish derby issue
 http://stackoverflow.com/questions/6061722/how-do-i-set-the-security-policy-file-for-a-specific-application-from-within-net
+
+ejb-client is not bundled in war while "maven workspace resolution enabled"
+https://developer.jboss.org/en/tools/blog/2012/02/03/m2eclipse-wtp-0150-new-noteworthy
+
+Spring AOP issue in WAS 8.5.5
+http://stackoverflow.com/questions/17599064/ibm-websphere-getting-error-for-spring-aop
+https://web.liferay.com/community/wiki/-/wiki/Main/WebSphere+8+tips
+
+Per4j without aspect
+http://www.javavillage.in/perf4j-basic-example-with-log4j.php
