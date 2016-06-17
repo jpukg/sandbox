@@ -32,3 +32,5 @@ Spring AOP vs Aspectj
 http://stackoverflow.com/questions/1606559/spring-aop-vs-aspectj?rq=1
 
 https://github.com/jayway/powermock/wiki/MockitoUsage
+
+https://www.smartics.eu/confluence/display/BLOG/2013/04/10/Maven+Toolchains%2C+our+Reporting+Projects+and+the+Alias+Plugin
