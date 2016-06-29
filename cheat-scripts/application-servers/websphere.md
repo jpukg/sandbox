@@ -12,4 +12,6 @@ Websphere Application Server
 #### Install scripts
 	http://www.ibm.com/developerworks/websphere/library/samples/SampleScripts.html
 
+#### Execute python script
+	C:\Program Files (x86)\IBM\WebSphere\AppServer\profiles\AppSrv01\bin>wsadmin.bat -lang jython -f C:\Users\jpukg\OneDrive\scripts\listapp.py
 	
