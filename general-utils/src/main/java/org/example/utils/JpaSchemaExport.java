@@ -17,7 +17,7 @@ public class JpaSchemaExport {
   private static final String SCHEMA_NAME = "EXAMPLE";
 
   public static void main(String[] args) throws IOException {
-    execute(DIALECT_ORACLE, "example-unit", "src/test/resources/example-ddl-scripts.sql", false);
+    execute(args[0], "example-unit", "src/test/resources/example-ddl-scripts.sql", false);
   }
 
   public static void execute(String dialectName, String persistenceUnitName, String destination, boolean format) {
