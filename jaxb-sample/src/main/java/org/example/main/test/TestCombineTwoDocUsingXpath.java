@@ -15,12 +15,13 @@ import org.w3c.dom.NodeList;
 
 public class TestCombineTwoDocUsingXpath {
 
-  static String inputXml ="";
+  static String inputXml ="<employee><name>Raj</name><location></location></employee>";
 
   public static void main(String[] args) throws Exception {
 
     Document document = DOMUtility.stringToDom(inputXml);
     
+    setTextValue(document, "/employee/location", "<data><latitude>10</latitude><longitude>11</longitude></data>");
 
     System.out.println(DOMUtility.domToString(document));
 
